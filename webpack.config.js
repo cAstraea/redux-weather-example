@@ -8,19 +8,21 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [{
+    loaders: [ {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['react', 'es2015', 'stage-1']
+        presets: [ 'react', 'es2015', 'stage-0' ]
       }
-    }]
+    } ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: [ '', '.js', '.jsx' ]
   },
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  devtool: 'cheap-module-source-map'
+
 };

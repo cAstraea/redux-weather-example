@@ -2,6 +2,7 @@
 bundle.js
 npm-debug.log
 key.js
+.vscode/
 
 # IntelliJ
 *.iml
